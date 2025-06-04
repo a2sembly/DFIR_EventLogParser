@@ -47,12 +47,12 @@ python main.py \
     --output rdp_sessions.csv
 ```
 
-### One‑liner (bash) to parse all EVTX in the current folder
+### Parse all EVTX in the folder
 ```
-for evtx in *.evtx; do
-  base=$(basename "$evtx" .evtx)
-  python main.py --type auto --input "$evtx" --output "${base}.csv"
-done
+python main.py \
+    --type auto \
+    --input "C:\Windows\System32\winevt\Logs" \
+    --output "C:\Users\user\Desktop"
 ```
 
 
