@@ -11,9 +11,9 @@ A tiny, **Python‑powered** toolkit that turns noisy Windows *.evtx* files int
 |-----------------|--------------------------|---------------------------|
 | **RDP Session History** | *Microsoft‑Windows‑TerminalServices‑LocalSessionManager/Operational* → 21, 22, 23, 24, 25, 39, 40 | `Timestamp, Host, PublicIP, SessionID, Action, …` |
 | **RDP Client (Outbound) Activity** | *Microsoft‑Windows‑TerminalServices‑RDPClient/Operational* → 1024, 1026 | `Timestamp, RemoteIP, HostApp, Outcome, …` |
-| **Interactive / Network Logons** | *Security.evtx* → 4624, 4625, 4634, 4648 | `User, LogonType, IP:Port, Process, …` |
+| **Interactive / Network Logons** | *Security.evtx* → 4624, 4625, 4634, 4648, 1102, 4720, 4722, 4724, 4723, 4725, 4726, 4781, 4738, 4688, 4732, 4733 | `User, LogonType, IP:Port, Process, …` |
 | **PowerShell Command Audit** | *Microsoft‑Windows‑PowerShell/Operational* → 400 | `Command, HostApplication, User, …` |
-| **Service Installation** | *System.evtx* → 7045 | `ServiceName, Path, StartType, …` |
+| **Service Installation** | *System.evtx* → 104, 7036, 7045 | `ServiceName, Path, StartType, …` |
 | **WinRM Operations** | *Microsoft‑Windows‑WinRM/Operational* → 132, 145 | `OperationName, ResourceURI, User, …` |
 
 
